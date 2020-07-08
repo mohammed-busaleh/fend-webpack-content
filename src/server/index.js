@@ -9,6 +9,7 @@ app.use(express.static('src/client'))
 console.log(__dirname)
 
 app.get('/', function (req, res) {
+   //'D:\\FEP\\WebPack\\src\\client\\views\\index.html'
     res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
 })
 
